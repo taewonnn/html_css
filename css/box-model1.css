@@ -1,0 +1,33 @@
+p {
+  background-color: lightblue;
+  margin: 0 0 24px 0;
+  padding-left: 24px;
+}
+
+p.special {
+  margin-top: 48px;
+  /* margin-bottom: */
+  /* margin-left: */
+  /* margin-right: */
+
+  /* padding-top */
+  /* padding-bottom */
+  /* padding-left */
+  /* padding-right */
+}
+
+
+/* 222222 */
+div {
+  width: 200px;
+  height: 200px;
+  background-color: orangered;
+  margin: 0 auto;
+  
+  /* Inline요소는 margin auto 적용이 안되서 부모 요소에 text-align을 적용해주어야 함   */
+  display: inline-block;
+}
+
+body {
+  text-align: center;
+}

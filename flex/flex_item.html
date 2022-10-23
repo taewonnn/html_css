@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-item 속성</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+      .flex-container {
+        display: flex;
+      }
+
+      .flex-item {
+      
+        /* flex-basis */
+        /* flex-basis: 100px; */
+
+        /* flex-grow */
+        /* flex-grow: 1; */
+
+        /* flex-shrink */
+        /* flex-shrink: 0; */
+      }
+
+      /* flex-축약형 */
+      .flex-item:nth-child(1) {
+        /* flex: 1; */
+        width: 20%;
+      }
+
+      .flex-item:nth-child(2) {
+        /* flex: 3; */
+        width: 60%;
+      }
+
+      .flex-item:nth-child(3) {
+        /* flex: 1; */
+        width: 20%;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+      <div class="flex-item">AAAAAAAAAAAA</div>
+      <div class="flex-item">BB</div>
+      <div class="flex-item">CCCCC</div>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+  flex-item에 적용하는 속성
+    
+  flex-basis
+    item의 기본 크기를 설정  * flex-basis:auto;가 기본값
+      flex-basis : 0 / 50% /300px / 10rem / content
+
+  flex-grow 
+    flex-basis의 값보다 커질 수 있는지를 결정하는 속성 ( 컨텐츠 제외 여백의 비율 늘리게)  * 0이 기본값
+
+    flex-grow : 0; / 1;   
+  
+
+  flex-shrink
+    flex-grow의 쌍 / flex-basis의 값보다 작아질 수 있는지 결정하는 속성 (컨텐츠 제외 여백의 비율 줄어들게 )   * 1이 기본값
+
+    flex-shrink: 1; / 0;
+
+    flex 축약형
+      적용 순서
+      flex-grow / flex-shrink / flex-basis(생략하면 0%가 됨!!)
+
+      flex: 1;
+        -> flex-grow : 1; / flex-shrink: 1; / flex-basis: 0%;
+
+      flex: 1 1 auto;
+        -> flex-grow: 1; / flex-shrink: 1; / flex-basis: auto;
+
+      flex: 1 500px;
+        -> flex-grow:1; / flex-shrink: 1; / flex-basis: 500px;
+
+
+-->

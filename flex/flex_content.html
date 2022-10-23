@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex - content 속성</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+      .flex-container {
+        display: flex;
+        
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+
+
+        /* 기본값  - nowrap */
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+        /* flex-flow: row wrap; */
+
+
+        /* 메인축 */
+        /* justify-content: space-between; */
+
+        /* 수직축 */
+        /* height: 300px;
+        align-items: center; */
+
+        /* 정가운데 정렬 */
+        /* justify-content: center;
+        align-items: center; */
+
+
+        /* 여러 행 정렬 */
+        /* height: 300px;
+        flex-wrap: wrap;
+        align-content: space-between; */
+
+      }
+    </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+    <div class="flex-item">BBB</div>
+    <div class="flex-item">CCCCCCCCCCCC</div>
+  </div>
+</body>
+</html>
+
+
+<!-- 
+  flex contatiner에 적용하는 속성
+  
+  축 방향
+    메인축 : flex item이 배치된 방향
+    교차축 : 메인축에 수직이 되는 곳
+
+  flex-direction
+    row : 가로(왼쪽에서 오른쪽으로)
+    column : 세로(위에서 아래로)
+
+  flex-wrap
+    줄바꿈 처리 / default는 nowrap
+  
+  flex-flow
+  flex-direction + flex wrap을 한 번에 지정할 수 있는 단축 속성
+    ex. flex-flow : row wrap;
+
+  
+  justify - 메인축 위에서 정렬 // 오뎅을 가로로 끼는 것
+    justify-content : flex-start/end / center / space-between / around / evenly
+
+  align - 수직축 위에서 정렬 /// 오뎅을 위 아래로 뜯어 먹는 것
+    align-item : strech / flex-start/end / center / baseline
+
+
+  align-content : 여러 행 정렬 행이 2줄 이상됬을 때 수직축 방향 정렬을 결정
+    align-content : stretch / flex start/end / center / space between / around / evenly
+-->

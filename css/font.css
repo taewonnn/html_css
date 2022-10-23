@@ -1,0 +1,53 @@
+div {
+  /* normal, italic, oblique */
+  /* font-style: normal; */
+  /* font-style: italic; */
+  font-style: oblique;
+
+  /* normal, bold, 100~900 */
+  font-weight: normal;
+}
+
+
+/* font-size */
+/* px % em rem 사용 */
+
+/*  %는 부모요소에 비례하여 반영 */
+/* 1em = 100% -> 1.5em = 150% */
+/* rem  1.5rem -> 맨 바깥(Html)에 비례하여 반영 */
+
+html { 
+  font-size: 14px; 
+}
+
+div { 
+  /* 각각 두 배씩 늘어남 */
+  font-size: 2em; 
+
+  /* html 기준 2배 늘어남 */
+  font-size: 2rem;
+}
+
+/* text-decoration */
+p {
+  text-decoration: dashed;
+  text-decoration: dotted;
+  text-decoration: line-through;
+  text-decoration: none;
+}
+
+
+/* text-transform */
+
+/* 글 위에 파란색 선 긋기 */
+/* text-decoration: overline blue; */
+
+
+/* text-shadow */
+/* 순서 : x좌표 / y좌표 / 흐림(선택) / 색 */
+
+/* text-shadow: 2px -2px 4px lightgrey  */
+
+/* 여러개 적용 가능 */
+/* text-shadow: 0 1px red, 0 -1px red, 1px 0 red, -1px 0 red */
+

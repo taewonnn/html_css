@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">		
+		<link rel="stylesheet" href="style.css">
+		<style>
+			.playground {
+				border: 10px solid maroon;
+				width: 980px;
+				margin: 0 auto;
+				border-radius: 20px;
+				background-color: skyblue;
+				display: flex;
+			}
+
+			.frog {
+				background-color: mediumseagreen;
+				color: lime;
+				font-size: 40px;
+				margin: 10px;
+				border: 6px solid green;
+				border-radius: 10px;
+				width: 200px;
+				flex-shrink: 1;   /* 축소 비율 */
+				justify-content: center;
+			}
+
+			/* .frog.disco {
+				flex-shrink: 0;   얘 크기만 안줄이겠다!
+			} */
+
+			/* 오른쪽으로
+			.frog.disco {
+				margin-left: auto;
+			} */
+
+			/* 왼쪽으로
+			.frog.dj {
+				margin: 10x auto;
+			} */
+
+			/* 가운데로 몰기
+			.frog.normal {
+				margin-left:auto;
+			}
+			.frog.disco {
+				margin-right: auto;
+			} */
+
+			/* 사용가능한 빈 공간을 내가 쓰겠다!
+			.frog.disco {
+				flex-grow: 1;
+			}  */
+
+
+		</style>
+	</head>
+	<body>
+		<div class="playground">
+			<div class="frog normal">Frog1</div>
+			<div class="frog normal">Frog1</div>
+			<div class="frog dj">Frog2</div>
+			<div class="frog disco">Frog3</div>
+		</div>
+	</body>
+</html>

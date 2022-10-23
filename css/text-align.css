@@ -1,0 +1,32 @@
+/* text-align */
+
+/* 종류 : left / right / center / justify */
+
+/* left와 justify(양쪽 맞춤)의 차이점 */
+/* left는 오른쪽 끝에 중구난방으로 떨어지지만 justify는 단어 별로 맞춰서 끊어줌 */
+
+/* letter-spacing : 글자 간의 간격 */
+
+/* word-spacing : 단어 간의 간격 */
+
+/* line-height : 줄 높이 */
+
+div {
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+
+/* text-indent  : 들여쓰기 */
+div {
+  text-indent: 1.5em;
+}
+
+
+
+/* list-style : ul / ol의 기본 설정값 */
+
+/* 종류 : disc / circle / square / 이모지 / url / none ... */
+
+list-
+
